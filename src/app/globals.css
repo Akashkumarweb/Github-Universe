@@ -2,20 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 255 255 255;
+    --foreground: 23 23 23;
+  }
+
+  .dark {
+    --background: 10 10 10;
+    --foreground: 237 237 237;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgb(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7C4DFF;
+  border-radius: 4px;
+}
+
+/* Galaxy background animation */
+.galaxy-bg {
+  background:
+    radial-gradient(circle at 50% 50%,
+      rgba(124, 77, 255, 0.1) 0%,
+      rgba(10, 15, 31, 1) 100%),
+    repeating-linear-gradient(45deg,
+      transparent,
+      transparent 15px,
+      rgba(124, 77, 255, 0.1) 15px,
+      rgba(124, 77, 255, 0.1) 30px);
 }

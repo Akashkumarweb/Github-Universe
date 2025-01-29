@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 GitHub Universe Explorer
+**Discover GitHub profiles in a whole new dimension!**  
 
-## Getting Started
+GitHub Universe Explorer is an interactive, visually stunning tool to explore GitHub profiles with unique visualizations and insights. Built with **Next.js 15, Tailwind CSS, and D3.js**, this project transforms GitHub data into an immersive experience.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Features  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **1. Code Pulse Visualization**
+- Visualize coding activity patterns with an interactive radial chart  
+- See activity distribution across days and hours  
+- Hover for detailed event counts  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### **2. Collaboration Galaxy**
+- Explore followers and following connections with a force-directed graph  
+- Drag-and-drop nodes for interactive exploration  
+- Color-coded nodes for followers, following, and the main user  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **3. Skill Ecosystem**
+- View language usage as an interactive ecosystem  
+- Bubble sizes represent repository counts  
+- Hover for detailed language stats  
 
-## Learn More
+### **4. Modern UI**
+- Space-themed design with smooth animations  
+- Dark mode support  
+- Responsive layout for all devices  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack  
+- **Frontend:** Next.js 15, Tailwind CSS, Framer Motion, D3.js  
+- **Backend:** Next.js API Routes  
+- **Styling:** Tailwind CSS with custom themes  
+- **Visualization:** D3.js for graphs, Three.js (optional for future 3D features)  
+- **State Management:** React hooks (`useState`, `useEffect`)  
+- **API:** GitHub REST API  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Getting Started  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **Prerequisites**
+- **Node.js** (v18 or higher)  
+- **GitHub Personal Access Token** (with `repo` and `read:user` scopes)  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **Installation**  
+
+#### 1️⃣ Clone the repository:  
+```sh
+git clone https://github.com/your-username/github-universe-explorer.git
+cd github-universe-explorer
